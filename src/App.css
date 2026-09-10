@@ -1,0 +1,15 @@
+.app {
+  min-height: 100vh;
+  padding: 0 2rem;
+}
+
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+@media (max-width: 600px) {
+  .app {
+    padding: 0 1rem;
+  }
+}
