@@ -63,6 +63,7 @@
   cursor: pointer;
   box-shadow: var(--shadow-soft);
   transition: all var(--transition-soft);
+  text-decoration: none;
 }
 
 .header__button:hover {
@@ -76,7 +77,6 @@
   transform: translateY(0);
 }
 
-/* DONATE — главное действие, чуть заметнее */
 .header__button--primary {
   background: var(--color-lavender);
   border-color: transparent;

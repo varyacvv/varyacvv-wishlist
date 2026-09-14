@@ -1,7 +1,12 @@
 import { Heart, Sparkles } from 'lucide-react';
 import './Header.css';
 
-function Header() {
+type HeaderProps = {
+  onOpenDonate: () => void;
+  onOpenFaq: () => void;
+};
+
+function Header({ onOpenDonate, onOpenFaq }: HeaderProps) {
   return (
     <header className="header">
       <div className="header__titles">
@@ -29,10 +34,15 @@ function Header() {
         <button
           type="button"
           className="header__button header__button--primary"
+          onClick={onOpenDonate}
         >
           DONATE
         </button>
-        <button type="button" className="header__button">
+        <button
+          type="button"
+          className="header__button"
+          onClick={onOpenFaq}
+        >
           FAQ
         </button>
       </div>
