@@ -2,7 +2,6 @@ import Header from './components/Header/Header';
 import WishlistGrid from './components/WishlistGrid/WishlistGrid';
 import WishlistCard from './components/WishlistCard/WishlistCard';
 import WishlistModal from './components/WishlistModal/WishlistModal';
-import FAQ from './components/FAQ/FAQ';
 import Footer from './components/Footer/Footer';
 import './App.css';
 
@@ -24,7 +23,6 @@ function App() {
             <WishlistCard />
           </WishlistGrid>
 
-          <FAQ />
         </main>
 
         <Footer />

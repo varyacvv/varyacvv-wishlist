@@ -1,48 +1,112 @@
 .header {
+  position: relative;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  gap: 1rem;
-  padding: 2.5rem 0 2rem;
+  gap: 1.5rem;
+  padding: 3rem 0 2.5rem;
 }
 
 .header__titles {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 0.35rem;
 }
 
 .header__title {
-  margin: 0;
-  font-size: clamp(1.75rem, 4vw, 2.5rem);
-  font-weight: 600;
-  letter-spacing: -0.01em;
+  font-size: clamp(2.25rem, 5vw, 3.25rem);
+  line-height: 1.1;
+}
+
+.header__heart {
+  display: inline-block;
+  color: var(--color-accent);
+  vertical-align: middle;
+  margin-left: 0.25rem;
+  transform: rotate(6deg);
 }
 
 .header__subtitle {
-  margin: 0;
   font-size: 0.95rem;
-  opacity: 0.7;
+  font-weight: 500;
+  color: var(--color-text-muted);
 }
 
-.header__faq-button {
+.header__sparkle {
+  position: absolute;
+  top: -0.5rem;
+  right: -1.5rem;
+  color: var(--color-accent);
+  opacity: 0.75;
+  transform: rotate(12deg);
+  pointer-events: none;
+}
+
+.header__actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
   flex-shrink: 0;
-  padding: 0.55rem 1.1rem;
-  border-radius: 999px;
-  border: 1px solid #e6ddd0;
-  background: #fffdf9;
-  font: inherit;
+}
+
+.header__button {
+  padding: 0.55rem 1.15rem;
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-text);
   cursor: pointer;
+  box-shadow: var(--shadow-soft);
+  transition: all var(--transition-soft);
 }
 
-.header__faq-button:hover {
-  background: #f5efe6;
+.header__button:hover {
+  background: var(--color-pink);
+  border-color: transparent;
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-lift);
 }
 
-@media (max-width: 600px) {
+.header__button:active {
+  transform: translateY(0);
+}
+
+/* DONATE — главное действие, чуть заметнее */
+.header__button--primary {
+  background: var(--color-lavender);
+  border-color: transparent;
+}
+
+.header__button--primary:hover {
+  background: var(--color-accent);
+  color: #fffdf9;
+}
+
+@media (max-width: 700px) {
   .header {
     flex-direction: column;
     align-items: flex-start;
-    padding-top: 1.75rem;
+    padding: 2rem 0 1.75rem;
+    gap: 1.25rem;
+  }
+
+  .header__sparkle {
+    right: 0;
+    top: -0.5rem;
+  }
+
+  .header__actions {
+    flex-wrap: wrap;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .header__button {
+    transition: none;
   }
 }
