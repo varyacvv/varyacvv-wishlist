@@ -4,6 +4,49 @@
   gap: 1.25rem;
 }
 
+.wishlist-grid > * {
+  animation: card-in 400ms ease backwards;
+}
+
+.wishlist-grid > *:nth-child(1) {
+  animation-delay: 0ms;
+}
+.wishlist-grid > *:nth-child(2) {
+  animation-delay: 40ms;
+}
+.wishlist-grid > *:nth-child(3) {
+  animation-delay: 80ms;
+}
+.wishlist-grid > *:nth-child(4) {
+  animation-delay: 120ms;
+}
+.wishlist-grid > *:nth-child(5) {
+  animation-delay: 160ms;
+}
+.wishlist-grid > *:nth-child(6) {
+  animation-delay: 200ms;
+}
+.wishlist-grid > *:nth-child(7) {
+  animation-delay: 240ms;
+}
+.wishlist-grid > *:nth-child(8) {
+  animation-delay: 280ms;
+}
+.wishlist-grid > *:nth-child(9) {
+  animation-delay: 320ms;
+}
+
+@keyframes card-in {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 @media (max-width: 1024px) {
   .wishlist-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -15,5 +58,11 @@
   .wishlist-grid {
     grid-template-columns: 1fr;
     gap: 0.9rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .wishlist-grid > * {
+    animation: none;
   }
 }
