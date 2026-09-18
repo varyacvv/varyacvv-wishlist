@@ -18,7 +18,15 @@ function WishlistModal({ item, onClose }: WishlistModalProps) {
     <Modal isOpen={isOpen} onClose={onClose} title={item?.title ?? ''}>
       {item && (
         <div className="wishlist-modal">
-          <div className="wishlist-modal__image-placeholder">image</div>
+          {item.image ? (
+            <img
+              src={item.image}
+              alt={item.title}
+              className="wishlist-modal__image"
+            />
+          ) : (
+            <div className="wishlist-modal__image-placeholder">image</div>
+          )}
 
           <p className="wishlist-modal__description">{modalText}</p>
 

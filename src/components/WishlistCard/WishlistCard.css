@@ -41,6 +41,14 @@
   --card-tilt: 1deg;
 }
 
+.wishlist-card__image {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+}
+
 .wishlist-card__image-placeholder {
   aspect-ratio: 4 / 3;
   border-radius: 12px;
