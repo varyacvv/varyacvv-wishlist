@@ -5,16 +5,15 @@ const DONATION_URL = 'https://tbank.ru/cf/2JmmFIlUUt5';
 export const wishlistItems: WishlistItem[] = [
   {
     id: 'job-help',
-    type: 'CARE',
     title: 'помочь мне с поиском работы',
     description: 'если знаешь вакансию или можешь помочь — напиши ♡',
+    modalText: 'ищу работу в frontend-разработке. если у тебя есть вакансия или можешь меня порекомендовать друзьям — напиши мне, я буду очень благодарна',
     price: 'бесценно',
     tilt: 'left',
     action: 'modal',
   },
   {
     id: 'mri',
-    type: 'CARE',
     title: 'МРТ спины и шеи',
     description: 'PLACEHOLDER',
     price: 'уточняется',
@@ -23,7 +22,6 @@ export const wishlistItems: WishlistItem[] = [
   },
   {
     id: 'dj-flx4',
-    type: 'WANT',
     title: 'DJ-контроллер FLX-4',
     description: 'чтобы записывать крутые сеты',
     price: 'уточняется',
@@ -33,7 +31,6 @@ export const wishlistItems: WishlistItem[] = [
   },
   {
     id: 'telegram-premium',
-    type: 'WANT',
     title: 'Telegram Premium',
     description: 'подписка на год: для эмодзи и функций',
     price: 'уточняется',
@@ -42,7 +39,6 @@ export const wishlistItems: WishlistItem[] = [
   },
   {
     id: 'yandex-disk',
-    type: 'WANT',
     title: 'Яндекс Диск',
     description: 'подписка на год: для хранения фото и видео',
     price: 'уточняется',
@@ -52,7 +48,6 @@ export const wishlistItems: WishlistItem[] = [
   },
   {
     id: 'speakers',
-    type: 'WANT',
     title: 'колонки для музыки',
     description: 'студийные мониторы, чтобы соседям было нескучно',
     price: 'уточняется',
@@ -61,7 +56,6 @@ export const wishlistItems: WishlistItem[] = [
   },
   {
     id: 'cosmetologist',
-    type: 'CARE',
     title: 'косметолог',
     description: 'уход за собой',
     price: 'уточняется',
@@ -71,7 +65,6 @@ export const wishlistItems: WishlistItem[] = [
   },
   {
     id: 'gold-apple',
-    type: 'WANT',
     title: 'сертификат Золотое Яблоко',
     description: 'уходовая косметика нужна всегда',
     price: 'уточняется',

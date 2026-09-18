@@ -52,13 +52,6 @@
   color: var(--color-text-muted);
 }
 
-.wishlist-card__type {
-  font-size: 0.75rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--color-text-muted);
-}
-
 .wishlist-card__title {
   font-size: 1.3rem;
 }

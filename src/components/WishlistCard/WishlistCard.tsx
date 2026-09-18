@@ -22,7 +22,6 @@ function WishlistCard({ item, accent, onAction }: WishlistCardProps) {
   return (
     <article className={className}>
       <div className="wishlist-card__image-placeholder">image</div>
-      <span className="wishlist-card__type">{item.type}</span>
       <h3 className="wishlist-card__title">{item.title}</h3>
       <p className="wishlist-card__description">{item.description}</p>
 
