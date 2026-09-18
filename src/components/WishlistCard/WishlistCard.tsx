@@ -18,6 +18,10 @@ function WishlistCard({ item, accent, onAction }: WishlistCardProps) {
   }
 
   const buttonLabel = item.action === 'modal' ? 'открыть' : 'оплатить';
+  const buttonAriaLabel =
+    item.action === 'modal'
+      ? `Открыть карточку: ${item.title}`
+      : `Оплатить: ${item.title}`;
 
   return (
     <article className={className}>
@@ -40,11 +44,7 @@ function WishlistCard({ item, accent, onAction }: WishlistCardProps) {
           type="button"
           className="wishlist-card__button"
           onClick={() => onAction(item)}
-          aria-label={
-            item.action === 'modal'
-              ? `Открыть карточку: ${item.title}`
-              : `Оплатить: ${item.title}`
-          }
+          aria-label={buttonAriaLabel}
         >
           {buttonLabel}
         </button>
