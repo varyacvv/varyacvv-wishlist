@@ -1,0 +1,26 @@
+.wishlist-modal {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  text-align: center;
+}
+
+.wishlist-modal__type {
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+
+.wishlist-modal__description {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: var(--color-text-muted);
+}
+
+.wishlist-modal__price {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
