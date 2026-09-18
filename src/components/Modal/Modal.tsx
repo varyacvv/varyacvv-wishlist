@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useId } from 'react';
 import { X } from 'lucide-react';
 import './Modal.css';
 
@@ -10,6 +10,8 @@ type ModalProps = {
 };
 
 function Modal({ isOpen, onClose, title, children }: ModalProps) {
+    const titleId = useId();
+
     useEffect(() => {
         if (!isOpen) return;
 
@@ -42,10 +44,12 @@ function Modal({ isOpen, onClose, title, children }: ModalProps) {
                 className="modal"
                 role="dialog"
                 aria-modal="true"
-                aria-label={title}
+                aria-labelledby={titleId}
             >
                 <div className="modal__header">
-                    <h2 className="modal__title">{title}</h2>
+                    <h2 className="modal__title" id={titleId}>
+                        {title}
+                    </h2>
                     <button
                         type="button"
                         className="modal__close"

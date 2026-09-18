@@ -40,6 +40,11 @@ function WishlistCard({ item, accent, onAction }: WishlistCardProps) {
           type="button"
           className="wishlist-card__button"
           onClick={() => onAction(item)}
+          aria-label={
+            item.action === 'modal'
+              ? `Открыть карточку: ${item.title}`
+              : `Оплатить: ${item.title}`
+          }
         >
           {buttonLabel}
         </button>

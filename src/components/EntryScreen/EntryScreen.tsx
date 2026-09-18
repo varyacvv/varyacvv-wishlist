@@ -29,15 +29,10 @@ function EntryScreen({ donationUrl, onOpenWishlist }: EntryScreenProps) {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="entry__qr-link"
-                aria-label="Открыть сбор донатов в Т-Банке"
+                aria-label="Перейти в Т-Банк"
             >
-                <img
-                    src={qrImage}
-                    alt="QR-код для доната"
-                    className="entry__qr-image"
-                />
+                <img src={qrImage} alt="QR-код для доната" className="entry__qr-image" />
             </a>
-
             <p className="entry__note">
                 это ссылка на сбор денег в Т-Банке.
                 <br />
