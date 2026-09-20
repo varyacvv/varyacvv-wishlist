@@ -68,7 +68,7 @@ varyacvv-wishlist/
 
 ### Автор
 
-Проект разрабатывается @varyacvv в личных целях.
+Проект разработан @varyacvv в личных целях.
 
 GitHub: [@varyacvv](https://github.com/varyacvv)  
 Telegram: [@varyacvv](https://t.me/varyacvv)
@@ -136,7 +136,7 @@ varyacvv-wishlist/
 
 ### Author
 
-The project is being developed by @varyacvv for personal use.
+The project developed by @varyacvv for personal use.
 
 GitHub: [@varyacvv](https://github.com/varyacvv)  
 Telegram: [@varyacvv](https://t.me/varyacvv)
