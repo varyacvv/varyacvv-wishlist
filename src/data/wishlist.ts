@@ -86,7 +86,7 @@ export const wishlistItems: WishlistItem[] = [
   },
   {
     id: "gold-apple",
-    title: "сертификат Золотое Яблоко",
+    title: "Сертификат Золотое Яблоко",
     description: "уходовая косметика нужна всегда",
     price: "любая сумма",
     action: "link",
