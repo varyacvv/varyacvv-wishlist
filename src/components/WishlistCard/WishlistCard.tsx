@@ -17,11 +17,11 @@ function WishlistCard({ item, accent, onAction }: WishlistCardProps) {
     className += ' wishlist-card--tilt-right';
   }
 
-  const buttonLabel = item.action === 'modal' ? 'открыть' : 'оплатить';
+  const buttonLabel = item.action === 'modal' ? 'открыть' : 'к оплате';
   const buttonAriaLabel =
     item.action === 'modal'
       ? `Открыть карточку: ${item.title}`
-      : `Оплатить: ${item.title}`;
+      : `к оплате: ${item.title}`;
 
   return (
     <article className={className}>

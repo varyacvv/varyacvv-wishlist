@@ -12,7 +12,7 @@ type WishlistModalProps = {
 function WishlistModal({ item, onClose }: WishlistModalProps) {
   const isOpen = item !== null;
 
-  const modalText = item?.modalText ?? item?.description ?? '';
+  const modalParagraphs = item?.modalText ?? [item?.description ?? ''];
 
   return (
     <Modal isOpen={isOpen} onClose={onClose} title={item?.title ?? ''}>
@@ -28,7 +28,13 @@ function WishlistModal({ item, onClose }: WishlistModalProps) {
             <div className="wishlist-modal__image-placeholder">image</div>
           )}
 
-          <p className="wishlist-modal__description">{modalText}</p>
+          <div className="wishlist-modal__text">
+            {modalParagraphs.map((paragraph, index) => (
+              <p key={index} className="wishlist-modal__description">
+                {paragraph}
+              </p>
+            ))}
+          </div>
 
           <div className="wishlist-modal__actions">
             <a

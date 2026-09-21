@@ -8,7 +8,7 @@
 
 .faq-modal__text {
   margin: 0;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   line-height: 1.65;
   color: var(--color-text-muted);
 }

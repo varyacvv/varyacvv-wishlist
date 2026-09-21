@@ -34,16 +34,13 @@ function EntryScreen({ donationUrl, onOpenWishlist }: EntryScreenProps) {
                 <img src={qrImage} alt="QR-код для доната" className="entry__qr-image" />
             </a>
             <p className="entry__note">
-                это ссылка на сбор денег в Т-Банке.
+                если хочешь порадовать меня подарком,
                 <br />
-                они пойдут на подарки для меня:
+                это можно сделать через Т-Банк.
                 <br />
-                на день рождения, новый год и т.д.
+                (QR код кликабельный)
                 <br />
                 <br />
-                если хочешь выбрать конкретный подарок,
-                <br />
-                напиши комментарий к донату
             </p>
 
             <button
