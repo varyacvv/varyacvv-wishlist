@@ -5,6 +5,8 @@
 **Личный вишлист**  
 Сайт-вишлист с подарками и заботами, которые я хотела бы получить или сделать.
 
+Проект развернут на *Vercel*: <https://varyacvv-wishlist.vercel.app/>
+
 ### Возможности
 
 - Стартовый экран с QR-кодом для доната
@@ -79,6 +81,8 @@ Telegram: [@varyacvv](https://t.me/varyacvv)
 
 **Personal Wishlist**  
 A wishlist site with gifts and care I'd love to receive or do.
+
+Project deployed on *Vercel*: <https://varyacvv-wishlist.vercel.app/>
 
 ### Features
 
